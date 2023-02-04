@@ -1,4 +1,5 @@
 ﻿using ADO.NETC;
+using AppConfiguration;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -37,9 +38,10 @@ namespace ADO.NET.WINDOWS
       
         }
 
-        private void button_Click(object sender , EventArgs e)
+        private void button1_Click(object sender , EventArgs e)
         {
-            msql.Connec
+            //싱글톤으로 호출하며 외부프로젝트 사용시 참조에 넣고 Using사용
+            ConfigurationMgr mgr = ConfigurationMgr.Instance();
         }
 
 
